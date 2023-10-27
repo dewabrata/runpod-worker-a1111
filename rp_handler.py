@@ -76,13 +76,13 @@ def validate_payload(event):
 
     if endpoint == 'sdapi/v1/txt2img':
         logger.debug(f'Validating /{endpoint} payload')
-        validated_input = validate(payload, TXT2IMG_SCHEMA)
+        #validated_input = validate(payload, TXT2IMG_SCHEMA)
     elif endpoint == 'sdapi/v1/img2img':
         logger.debug(f'Validating /{endpoint} payload')
-        validated_input = validate(payload, IMG2IMG_SCHEMA)
+        #validated_input = validate(payload, IMG2IMG_SCHEMA)
     elif endpoint == 'sdapi/v1/interrogate' and method == 'POST':
         logger.debug(f'Validating /{endpoint} payload')
-        validated_input = validate(payload, INTERROGATE_SCHEMA)
+        #validated_input = validate(payload, INTERROGATE_SCHEMA)
 
     return endpoint, event['input']['api']['method'], validated_input
 
