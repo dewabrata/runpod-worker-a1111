@@ -1,5 +1,7 @@
 # A1111 Stable Diffusion | RunPod Serverless Worker
 
+untuk running ./webui.sh -f --share --enable-insecure-extension-access
+
 This is the source code for a [RunPod](https://runpod.io?ref=2xxro4sy)
 Serverless worker that uses the [Automatic1111 Stable Diffusion API](
 https://github.com/AUTOMATIC1111/stable-diffusion-webui) for inference.
