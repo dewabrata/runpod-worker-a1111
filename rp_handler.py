@@ -83,6 +83,9 @@ def validate_payload(event):
     elif endpoint == 'sdapi/v1/interrogate' and method == 'POST':
         logger.debug(f'Validating /{endpoint} payload')
         #validated_input = validate(payload, INTERROGATE_SCHEMA)
+    elif endpoint == 'roop/image' and method == 'POST':
+        logger.debug(f'Validating /{endpoint} payload')
+        #validated_input = validate(payload, INTERROGATE_SCHEMA)
 
     return endpoint, event['input']['api']['method'], validated_input
 
