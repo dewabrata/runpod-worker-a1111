@@ -30,7 +30,8 @@ API_SCHEMA = {
             'controlnet/model_list',
             'sdapi/v1/refresh-checkpoints',
             'sdapi/v1/refresh-loras',
-            'sdapi/v1/interrogate'
+            'sdapi/v1/interrogate',
+            'roop/image'
         ]
     }
 }
